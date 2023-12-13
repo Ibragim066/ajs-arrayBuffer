@@ -5,7 +5,7 @@ export const CharacterTypes = {
 export default class Character {
   constructor(name, type) {
     if (typeof name !== 'string' || name.length < 2 || name.length > 10) {
-      throw new Error('Передаются некорректные значения');
+      throw new Error('Некорректные значения');
     }
 
     this.name = name;
@@ -13,7 +13,7 @@ export default class Character {
     if (type === 'Magician' || type === 'Daemon') {
       this.type = type;
     } else {
-      throw new Error('Передаются некорректные значения');
+      throw new Error('Некорректные значения');
     }
 
     this.health = 100;
@@ -46,7 +46,7 @@ export default class Character {
 
   set attack(value) {
     if (value <= 0) {
-      throw new Error('Не возможно атаковать противника');
+      throw new Error('Невозможно атаковать противника');
     }
     this.attackPower = value;
   }

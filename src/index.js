@@ -1,7 +1,8 @@
+/* eslint-disable no-console */
 import './css/style.css';
 import Daemon from './js/Math/Daemon';
 import Magician from './js/Math/Magician';
-import ArrayBufferConverter from './js/ArrayBuffer/ArrayBufferConverter';
+import ArrayBufferConverter from './js/arrayBuffer/ArrayBufferConverter';
 import getBuffer from './js/arrayBuffer/getBuffer';
 
 const daemon = new Daemon('Daemon');
